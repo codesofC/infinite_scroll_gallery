@@ -1,3 +1,4 @@
+import Providers from "./providers";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import type { Metadata } from "next";
@@ -21,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="bg-[#0F1117]">
           <Hero />
-          {children}
+          <Providers> { children } </Providers>
           <Footer />
         </main>
       </body>

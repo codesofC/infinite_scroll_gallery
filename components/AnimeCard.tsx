@@ -1,6 +1,8 @@
+"use client"
+
 import Image from "next/image"
 import { MotionDiv } from "./MotionDiv"
-
+import { useRouter } from "next/navigation"
 
 
 export interface AnimeProps{
@@ -28,6 +30,9 @@ const variants = {
 }
 
 const AnimeCard = ( { anime, index }: Props) => {
+
+    const router = useRouter()
+
   return (
     <MotionDiv 
         variants={variants}
@@ -39,10 +44,10 @@ const AnimeCard = ( { anime, index }: Props) => {
             duration: 0.5
         }}
         viewport={{ amount: 0 }}
-        className="max-w-sm rounded relative w-full"
+        className="max-w-sm rounded relative w-full cursor-pointer"
     >
-        <div className="relative w-full h-[27vh] sm:h-[37vh]">
-            <Image 
+        <div className="relative w-full h-[27vh] sm:h-[37vh]" onClick={() => router.push(`/anime?name=${anime.name}`)}>
+            <Image
                 src={`https://shikimori.one${anime.image.original}`}
                 alt={anime.name}
                 fill

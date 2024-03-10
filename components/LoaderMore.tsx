@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import { fetchAnime } from "@/app/action";
+import { fetchAnimes } from "@/app/action";
 
 type AnimeCard = JSX.Element
 
@@ -16,7 +16,7 @@ const LoaderMore = () => {
 
   useEffect(() => {
     if (inView) {
-      fetchAnime(page).then((res) => {
+      fetchAnimes(page).then((res) => {
         setData([...data, ...res]);
         page++;
       });

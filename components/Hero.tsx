@@ -16,7 +16,9 @@ const Hero = () => {
                 Explore The <span className="red-gradient"> Anime Universe </span>
             </h1>
         </div>
-        <div className="w-full lg:flex-1 relative h-[50vh] justify-center">
+        <div 
+            className="w-full lg:flex-1 relative h-[50vh] justify-center"
+        >
             <Image 
                 src="/anime.png"
                 alt="anime"
