@@ -21,6 +21,8 @@ bun dev
 * Tailwind CSS
 
 ## 🍿 Demo
-https://github.com/codesofC/infinite_scroll_gallery/assets/76754023/6a35ad31-777c-486f-bdd4-443b754de4b7
+https://github.com/codesofC/infinite_scroll_gallery/assets/76754023/c6cae4b7-1541-454f-874f-6829c9a0d443
+
+
 
 
